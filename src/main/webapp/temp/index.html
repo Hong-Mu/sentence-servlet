@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe to Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-gray-100 p-4">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-xl font-bold">MyApp</h1>
+                <nav>
+                    <button
+                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Logout</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto p-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Today's Sentence -->
+                <section class="bg-gray-100 p-4 rounded">
+                    <h2 class="text-lg font-semibold mb-2">Today's Sentence</h2>
+                    <blockquote class="italic border-l-4 border-blue-500 pl-4 mb-2">"I am not what happened to me, I am
+                        what I choose to become." - Carl Jung</blockquote>
+                    <div class="text-right">
+                        <button class="text-blue-500 hover:underline">Random</button>
+                    </div>
+                </section>
+
+                <!-- Sentence Collection -->
+                <section class="bg-gray-100 p-4 rounded">
+                    <h2 class="text-lg font-semibold mb-2">Sentence Collection</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-2 rounded shadow">Sentence 1</div>
+                        <div class="bg-white p-2 rounded shadow">Sentence 2</div>
+                        <div class="bg-white p-2 rounded shadow">Sentence 3</div>
+                        <div class="bg-white p-2 rounded shadow">Sentence 4</div>
+                    </div>
+                    <div class="text-right mt-2">
+                        <button class="text-blue-500 hover:underline">More</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-200 p-4">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2023 MyApp. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Login/Register Modals -->
+    <div id="loginModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="bg-white p-4 rounded">
+            <h2 class="text-lg font-semibold mb-2">Login</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="email" class="block mb-1">Email</label>
+                    <input type="email" id="email" class="w-full border-gray-300 rounded p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block mb-1">Password</label>
+                    <input type="password" id="password" class="w-full border-gray-300 rounded p-2" required>
+                </div>
+                <div class="flex justify-between items-center">
+                    <button type="submit"
+                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Login</button>
+                    <button type="button" class="text-blue-500 hover:underline">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="registerModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="bg-white p-4 rounded">
+            <h2 class="text-lg font-semibold mb-2">Register</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="registerEmail" class="block mb-1">Email</label>
+                    <input type="email" id="registerEmail" class="w-full border-gray-300 rounded p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="registerName" class="block mb-1">Name</label>
+                    <input type="text" id="registerName" class="w-full border-gray-300 rounded p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="registerPassword" class="block mb-1">Password</label>
+                    <input type="password" id="registerPassword" class="w-full border-gray-300 rounded p-2" required>
+                </div>
+                <div class="flex justify-between items-center">
+                    <button type="submit"
+                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Register</button>
+                    <button type="button" class="text-blue-500 hover:underline">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Here you can add your JavaScript if needed
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open+Sans', sans-serif;
+        }
+
+        .highlight {
+            background-color: #fde047;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+    <div class="container mx-auto p-4">
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-bold">Language Learning App</h1>
+            <div>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Logout</button>
+                <button
+                    class="ml-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Settings</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="md:col-span-1">
+                <div class="p-4 border border-gray-300 rounded">
+                    <h2 class="font-semibold text-lg mb-4">Login</h2>
+                    <input class="w-full mb-3 px-3 py-2 border border-gray-300 rounded" type="email"
+                        placeholder="Email">
+                    <input class="w-full mb-3 px-3 py-2 border border-gray-300 rounded" type="password"
+                        placeholder="Password">
+                    <button
+                        class="w-full bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition">Login</button>
+                    <button
+                        class="w-full mt-2 bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300 transition">Register</button>
+                </div>
+            </div>
+            <div class="md:col-span-2">
+                <div class="p-4 border border-gray-300 rounded">
+                    <h2 class="font-semibold text-lg mb-4">Today's Sentences</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-3 border border-gray-300 rounded highlight">
+                            <p>"I am learning something new every day." - Random Learner</p>
+                        </div>
+                        <div class="p-3 border border-gray-300 rounded">
+                            <p>"The journey of a thousand miles begins with a single step." - Random Learner</p>
+                        </div>
+                        <div class="p-3 border border-gray-300 rounded">
+                            <p>"To have another language is to possess a second soul." - Random Learner</p>
+                        </div>
+                        <div class="p-3 border border-gray-300 rounded">
+                            <p>"Language is the road map of a culture." - Random Learner</p>
+                        </div>
+                    </div>
+                    <button
+                        class="mt-4 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition">Random</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-6 p-4 border border-gray-300 rounded">
+            <h2 class="font-semibold text-lg mb-4">Sentence Collection</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-3 border border-gray-300 rounded">
+                    <p>"Learning is a treasure that will follow its owner everywhere." - Random Learner</p>
+                </div>
+                <div class="p-3 border border-gray-300 rounded">
+                    <p>"You live a new life for every new language you speak." - Random Learner</p>
+                </div>
+                <div class="p-3 border border-gray-300 rounded">
+                    <p>"One language sets you in a corridor for life. Two languages open every door along the way." -
+                        Random Learner</p>
+                </div>
+            </div>
+            <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">More</button>
+        </div>
+    </div>
+
+    <script>
+        // Placeholder for any potential JavaScript functionality
+    </script>
+</body>
+
+</html>

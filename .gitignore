@@ -1,0 +1,7 @@
+src/main/java/net/
+src/main/webapp/common
+src/main/webapp/login
+src/main/webapp/register
+src/main/webapp/todo
+target/
+db.properties
